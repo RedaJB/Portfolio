@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Bonjour , je  <span>suis Reda ATIK.</span>
+                    Etudiant en BUT Informatique .
+                </h1>
+                <p>
+                    Je suis un etudiant en BUT Infomatique , je suis une personne ordinaire avec des passions ordinaires .
+                </p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>à propos de <span>moi</span><span class="bg-text">MON PARCOURS</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information </h4>
+                    
+
+                </div>
+                
+            </div><p>
+                        Je m'appelle Reda Atik, une personne ordinaire avec des passions ordinaires. Le football et le MMA sont mes principales passions, me permettant de ressentir l'excitation et l'adrénaline à chaque match ou combat. En dehors de cela, je trouve également du plaisir dans le monde des jeux vidéo. FIFA est mon jeu de prédilection, mais j'apprécie aussi les jeux d'horreur et de coopération. L'essentiel pour moi est de m'amuser avec mes amis, peu importe la qualité du jeu.
+
+J'ai 17 ans et je suis actuellement en première année de but informatique à l'IUT2 de Grenoble. J'ai étudié au collège Lamartine et au lycée Fays à Villeurbanne. J'ai une passion pour l'informatique et je suis déterminé à approfondir mes connaissances dans ce domaine.
+                    </p>
+            
+            </div>
+            <h4 class="stat-title">Mon parcours scolaire</h4>
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">2015 - 2019</p>
+        <h5>Collège Lamartine<span> - Villeurbanne</span></h5>
+        <p>
+            J'ai passé 4 ans au collège Lamartine à Villeurbanne.
+        </p>
+    </div>
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">2019 - 2022</p>
+        <h5>Lycée Fays<span> - Villeurbanne</span></h5>
+        <p>
+            J'ai poursuivi mes études pendant 3 ans au lycée Fays à Villeurbanne.
+        </p>
+    </div>
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">2022 - 2023</p>
+        <h5>1ère année en informatique à IUT2 Grenoble<span> - Grenoble</span></h5>
+        <p>
+            Je suis pendant 1 an à l'IUT2 de Grenoble, dans le domaine de l'informatique.
+        </p>
+    </div>
+
+</div>
+
+        </section>
+
+
+
+
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">MES SAE</span></h2>
+            </div>
+            <p class="port-text">
+                Voila mon portfolio contenant mes SAE
+            </p>
+            <div class="portfolios">
+                
+                <div class="portfolio-item" style="background-color: black;">
+                    <div class="image">
+                        <img src="img/sae0102.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Implémentation d'un besoin client</h3>
+                        <div class="icons">
+                            <p id="infos" class="icon" onclick="showModal()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE R1.01</p>
+                                <p>Le projet "Classification automatique" vise à développer un programme de classification de dépêches. L'objectif est de classer automatiquement chaque dépêche dans l'une des cinq catégories suivantes : ENVIRONNEMENT-SCIENCES, CULTURE, ECONOMIE, POLITIQUE, ou SPORTS. Le programme utilise des lexiques spécifiques à chaque catégorie, constitués de mots-clés et de poids associés. En calculant le score de chaque dépêche pour chaque catégorie, le programme détermine la catégorie attribuée à la dépêche. Le projet se divise en différentes parties, allant de la création manuelle des lexiques à l'amélioration des résultats grâce à des tests et des ajustements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/sae03.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Comparaison d'approches algorithmiques</h3>
+                        <div class="icons">
+                            <p id="infos1" class="icon" onclick="showModal1()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton1" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal1()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE R1.03</p>
+                                <p>Le travail consiste à effectuer les installations suivantes :
+
+                                    Installer Debian 11 avec KDE/Plasma en utilisant votre login UGA comme nom d'utilisateur, en veillant à décocher l'option GNOME lors de l'installation.
+                                    
+                                    Installer JDK et git en utilisant les packages Debian.
+                                    
+                                    Installer IntelliJ IDEA Community de trois manières différentes : en utilisant une archive, en utilisant un package snap et en utilisant un package flatpak.
+                                    
+                                    Pour rendre compte de votre travail, vous devez fournir des captures d'écran selon les consignes spécifiées, montrant les différentes étapes de l'installation et des vérifications effectuées.
+                                    
+                                    Une fois le travail terminé, vous pouvez conserver votre machine virtuelle en suivant les instructions fournies pour déplacer l'image disque sur erebus4.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/sae04.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Installation d'un poste pour le développement</h3>
+                        <div class="icons">
+                            <p id="infos2" class="icon" onclick="showModal2()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton2" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal2()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE R1.04</p>
+                                <p>Le projet consiste à réaliser différentes installations logicielles sur un système Debian 11 avec l'environnement de bureau KDE/Plasma. Les logiciels à installer sont les suivants :
+
+                                    Debian 11 avec KDE/Plasma en utilisant votre nom de login UGA comme nom d'utilisateur.
+                                    JDK et git en utilisant des packages Debian.
+                                    IntelliJ IDEA Community installé de trois manières différentes.
+                                    Effectuer des commandes spécifiques sur la machine virtuelle.
+                                    Pour chaque installation, vous devez fournir des captures d'écran respectant certaines consignes, telles que l'affichage des empreintes SHA-512 de l'image ISO de Debian 11, la saisie du nom de login UGA lors de l'installation, le bureau KDE/Plasma avec une résolution spécifique, et les résultats des commandes pour vérifier les installations des logiciels.
+                                    
+                                    Une fois les captures d'écran réalisées, vous devez les déposer individuellement sur Chamilo, dans le cours S1.03, section "Travaux". Vous disposez de 3 heures pour effectuer le travail, sauf en cas de bénéfice d'un tiers temps, où vous disposez de 4 heures. Les captures doivent être nommées de Capture01.png à Capture10.png, respectant un ordre spécifique.
+                                    
+                                    Enfin, si vous souhaitez conserver votre machine virtuelle après cette tâche, vous devez l'éteindre et exécuter un script spécifique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/sae0506.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Création d'une base de données</h3>
+                        <div class="icons">
+                            <p id="infos3" class="icon" onclick="showModal3()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton3" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal3()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE R1.0506</p>
+                                <p></p>
+
+                                <p>Le projet consiste à créer un site web institutionnel pour une entreprise du secteur numérique, destiné à la génération Alpha (élèves de 3ème). L'objectif est de répondre à la commande en créant un site pratique, sobre sur le plan écologique et visuel, et en mettant en valeur la transition numérique et écologique de l'entreprise.
+
+Le projet se déroule en plusieurs phases. Dans la première phase, les étudiants se regroupent et choisissent une entreprise. Ils effectuent ensuite des recherches d'informations et rédigent une fiche de présentation synthétique de l'entreprise, en recueillant les besoins.
+
+La deuxième phase comprend des travaux pratiques de conception de la maquette du site web. Les étudiants travaillent sur la conception de la maquette, puis passent à la réalisation du site. Ils effectuent un rendu de la maquette sur Chamilo.
+
+La troisième phase est une semaine bloquée (SB4) qui se déroule du 23 janvier. Pendant cette semaine, les étudiants se préparent aux présentations orales. Ils finalisent le site et se préparent à la présentation individuelle orale de leurs grilles d'auto-évaluation, ainsi qu'à la présentation de groupe du site.
+
+L'évaluation comprend donc des rendus individuels d'auto-évaluation, des présentations orales individuelles et de groupe, ainsi qu'un rendu de la conception et de la réalisation du site web. Les rendus se font sur Chamilo, en utilisant différents formats tels que des fichiers PDF et une archive ZIP contenant les éléments du site web.
+
+Le respect des délais et du temps de présentation est important et fait partie intégrante de la notation. Les critères d'évaluation incluent les éléments techniques liés à la conception et à la réalisation du site, la cohérence graphique et éditoriale, ainsi que la capacité à répondre aux besoins de la commande et à mettre en valeur la transition numérique et écologique de l'entreprise.
+
+                                </p>
+                                
+                                <p>Bienvenue dans ma section dédiée à ma SAE en développement web. Au cours de cette expérience immersive, j'ai eu l'opportunité de plonger au cœur du monde passionnant du développement web et d'acquérir des compétences essentielles dans ce domaine en constante évolution.
+                                    Pendant cette SAE, j'ai été exposé à différentes technologies et concepts clés du développement web. J'ai exploré les langages tels que HTML, CSS et JavaScript pour concevoir des sites web interactifs et esthétiquement attrayants. J'ai également découvert l'importance de l'architecture de l'information, de l'expérience utilisateur et de l'accessibilité pour créer des interfaces conviviales.
+                                    J'ai également eu l'occasion de plonger dans le monde de la programmation côté serveur en utilisant des technologies telles que PHP et Node.js. Cela m'a permis de développer des fonctionnalités dynamiques et interactives, de gérer des formulaires et d'interagir avec des bases de données pour offrir des expériences utilisateur optimales.
+                                    Une autre compétence clé que j'ai développée est la conception de sites web réactifs. J'ai appris à créer des sites qui s'adaptent de manière fluide à différents appareils et résolutions d'écran, offrant ainsi une expérience cohérente sur tous les supports.
+                                    En travaillant sur des projets concrets, j'ai également exploré des systèmes de gestion de contenu (CMS) tels que WordPress, en personnalisant des thèmes, en gérant des plugins et en créant des sites web dynamiques avec une interface d'administration conviviale.
+                                    Au-delà des compétences techniques, j'ai également perfectionné mes aptitudes en collaboration d'équipe, en partageant des idées, en résolvant des problèmes et en gérant des projets communs.
+                                    Je vous invite à parcourir mon portfolio pour découvrir certains des projets sur lesquels j'ai travaillé lors de ma SAE en développement web. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes compétences et comment je peux contribuer à vos projets de développement web."
+                                    N'hésitez pas à personnaliser ce texte en fonction de votre expérience spécifique et des compétences que vous souhaitez mettre en avant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/megasae.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Création d'une base de données</h3>
+                        <div class="icons">
+                            <p id="infos3" class="icon" onclick="showModal4()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton3" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal4()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>MEGA SAE</p>
+                                <p>Bienvenue dans ma section dédiée à ma SAE en développement web. Au cours de cette expérience immersive, j'ai eu l'opportunité de plonger au cœur du monde passionnant du développement web et d'acquérir des compétences essentielles dans ce domaine en constante évolution.
+                                    Pendant cette SAE, j'ai été exposé à différentes technologies et concepts clés du développement web. J'ai exploré les langages tels que HTML, CSS et JavaScript pour concevoir des sites web interactifs et esthétiquement attrayants. J'ai également découvert l'importance de l'architecture de l'information, de l'expérience utilisateur et de l'accessibilité pour créer des interfaces conviviales.
+                                    J'ai également eu l'occasion de plonger dans le monde de la programmation côté serveur en utilisant des technologies telles que PHP et Node.js. Cela m'a permis de développer des fonctionnalités dynamiques et interactives, de gérer des formulaires et d'interagir avec des bases de données pour offrir des expériences utilisateur optimales.
+                                    Une autre compétence clé que j'ai développée est la conception de sites web réactifs. J'ai appris à créer des sites qui s'adaptent de manière fluide à différents appareils et résolutions d'écran, offrant ainsi une expérience cohérente sur tous les supports.
+                                    En travaillant sur des projets concrets, j'ai également exploré des systèmes de gestion de contenu (CMS) tels que WordPress, en personnalisant des thèmes, en gérant des plugins et en créant des sites web dynamiques avec une interface d'administration conviviale.
+                                    Au-delà des compétences techniques, j'ai également perfectionné mes aptitudes en collaboration d'équipe, en partageant des idées, en résolvant des problèmes et en gérant des projets communs.
+                                    Je vous invite à parcourir mon portfolio pour découvrir certains des projets sur lesquels j'ai travaillé lors de ma SAE en développement web. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes compétences et comment je peux contribuer à vos projets de développement web."
+                                    N'hésitez pas à personnaliser ce texte en fonction de votre expérience spécifique et des compétences que vous souhaitez mettre en avant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/sae203.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Création d'une base de données</h3>
+                        <div class="icons">
+                            <p id="infos3" class="icon" onclick="showModal5()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton3" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal5()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE 2.03</p>
+                                <p>Le projet de la SAÉ S2.03 consiste à réaliser un guide d'installation rédigé en anglais pour un serveur Debian 11 équipé d'Apache, PostgreSQL et PHP. Le guide doit être rédigé sous forme d'un document PDF et doit être déposé sur Chamilo, dans la section "Rendu de travail" du groupe correspondant.
+
+                                    Le projet sera réalisé en autonomie guidée, avec quatre séances prévues :
+                                    
+                                    Séance 1 : Lecture du cahier des charges et installation d'un serveur Debian sur une machine virtuelle.
+                                    Séance 2 : Installation d'Apache, PostgreSQL et PHP sur le serveur Debian.
+                                    Séance 3 : Préparation du guide d'installation, organisation du contenu et acquisition des éléments nécessaires tels que les captures d'écran et les diagrammes.
+                                    Séance 4 : Finalisation du document et rendu du guide d'installation.
+                                    
+                                    Pour mener à bien ce projet, il est recommandé de consulter les ressources suivantes :
+                                    
+                                    Distribution Debian : Pour obtenir des informations sur la distribution Debian.
+                                    Manuels d'installation de Debian : Pour se familiariser avec les instructions d'installation de Debian.
+                                    Debian Facile : Une ressource utile pour faciliter l'installation et la configuration de Debian.
+                                    Manuel d'installation d'Apache : Un guide pour installer Apache.
+                                    PostgreSQL : Des ressources pour l'installation de PostgreSQL.
+                                    Manuel d'installation de PHP : Un guide pour installer PHP.
+                                    Les intervenants du projet sont les suivants : raphael.bleuse@univ-grenoble-alpes.fr, laurent.bonnaud@univ-grenoble-alpes.fr, pierre-francois.dutot@univ-grenoble-alpes.fr, ghada.moualla@univ-grenoble-alpes.fr, francois.portet@imag.fr.
+                                    
+                                    Le cahier des charges complet de la SAÉ peut être consulté pour plus de détails.
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/sae204.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Création d'une base de données</h3>
+                        <div class="icons">
+                            <p id="infos3" class="icon" onclick="showModal6()"><i class="fas fa-info"></i> </p>
+                            <a href="https://docs.google.com/document/d/1RuLI-B6YKCNjuVJK2OkOyczASZdELkNtDCMyaPAx6Bk/edit?usp=sharing" class="icon">
+                                <i class="fab fa-google-drive"></i> <!-- Logo Google Drive -->
+                            </a>
+                            <button id="downloadButton3" class="icon" onclick="downloadFile()">
+                                <i class="fas fa-code"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" onclick="hideModal6()">
+                        <div class="modal-content">
+                            <div class="modal-text">
+                                <p>SAE R2.04</p>
+                                <p>La SAÉ (Situation d'Apprentissage et d'Évaluation) se déroule sur plusieurs semaines avec des séances dédiées à différents aspects du projet. Voici un résumé du calendrier :
+
+                                    Semaine 1 : Lancement de la SAÉ avec une présentation du sujet en amphithéâtre. Les binômes doivent être déclarés avant la fin de la semaine. Les séances 2 et 3 sont consacrées à l'exploration, le nettoyage et la transformation des données en base de données (BD).
+                                    
+                                    Semaine 2 : Les binômes doivent rendre le formulaire de cadrage de projet. Les séances 1 et 2 se concentrent sur la poursuite de l'exploration, le nettoyage et la transformation des données en BD. À la fin de la semaine, la phase 1 du projet doit être rendue.
+                                    
+                                    Semaine 3 : Les binômes doivent rendre le formulaire sur les contraintes et risques du projet. La séance 1 est consacrée à la production des graphiques statistiques en Analyse des Algorithmes (AA), tandis que la séance 2 se concentre sur la poursuite de cette production en séance encadrée. Pour les groupes C, D et E, la séance 3 est dédiée à la rédaction du rapport en anglais. À la fin de la semaine, la phase finale du projet (statistiques pour tous, anglais pour les groupes C, D, E) ainsi que le formulaire sur l'organisation du travail doivent être rendus.
+                                    
+                                    Semaine 4 : Pour les groupes A et B, la séance 3 est réservée à la rédaction du rapport en anglais. À la fin de la semaine, la phase finale en anglais pour les groupes A et B doit être rendue.
+                                    
+                                    La SAÉ vise à réaliser un guide d'installation rédigé en anglais pour un serveur Debian 11 équipé d'Apache, PostgreSQL et PHP. Les rendus se font sous forme de documents PDF déposés dans le système de gestion de l'apprentissage Chamilo. Les intervenants pour ce projet sont Raphael Bleuse, Laurent Bonnaud, Pierre-François Dutot, Ghada Moualla et Francois Portet.
+                                    
+                                    N'hésitez pas à consulter les ressources bibliographiques et webographiques fournies pour obtenir plus d'informations sur les différentes étapes du projet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+                
+                
+                
+                
+                
+               
+
+
+
+
+
+<section class="container contact" id="contact">
+    <div class="contact-container">
+        <div class="main-title">
+            <h2>Contactez-moi</h2>
+        </div>
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>Contactez-moi ici</h4>
+                <p>
+                    Quelques informations à propos de moi :
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location</span>
+                        </div>
+                        <p>
+                             Grenoble, France
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </div>
+                        <p>
+                            <span> redaatikpro@gmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Éducation</span>
+                        </div>
+                        <p>
+                            <span> IUT 2, Grenoble</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                            <span>Numéro de téléphone</span>
+                        </div>
+                        <p>
+                            <span> 0651348758</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+
+    <script>
+
+function showModal() {
+            var modal = document.querySelector('.portfolio-item .modal-overlay');
+            modal.classList.add('show');
+        }
+        
+        function hideModal() {
+            var modal = document.querySelector('.portfolio-item .modal-overlay');
+            modal.classList.remove('show');
+        }
+    
+        function showModal1() {
+            var modal = document.querySelector('.portfolio-item:nth-child(2) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal1() {
+            var modal = document.querySelector('.portfolio-item:nth-child(2) .modal-overlay');
+            modal.classList.remove('show');
+        }
+    
+        function showModal2() {
+            var modal = document.querySelector('.portfolio-item:nth-child(3) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal2() {
+            var modal = document.querySelector('.portfolio-item:nth-child(3) .modal-overlay');
+            modal.classList.remove('show');
+        }
+    
+        function showModal3() {
+            var modal = document.querySelector('.portfolio-item:nth-child(4) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal3() {
+            var modal = document.querySelector('.portfolio-item:nth-child(4) .modal-overlay');
+            modal.classList.remove('show');
+
+
+        }
+
+                        
+        function showModal4() {
+            var modal = document.querySelector('.portfolio-item:nth-child(5) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal4() {
+            var modal = document.querySelector('.portfolio-item:nth-child(5) .modal-overlay');
+            modal.classList.remove('show');}
+
+            function showModal5() {
+            var modal = document.querySelector('.portfolio-item:nth-child(6) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal5() {
+            var modal = document.querySelector('.portfolio-item:nth-child(6) .modal-overlay');
+            modal.classList.remove('show');}   
+            
+            function showModal6() {
+            var modal = document.querySelector('.portfolio-item:nth-child(7) .modal-overlay');
+            modal.classList.add('show');
+        }
+    
+        function hideModal6() {
+            var modal = document.querySelector('.portfolio-item:nth-child(7) .modal-overlay');
+            modal.classList.remove('show');}     
+
+       
+
+    </script>
+    
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+    
+        .modal-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    
+        .modal-content {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 1000px; /* Augmenté à 1000px */
+            text-align: center;
+        }
+    
+        .modal-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .modal-text p {
+            margin-bottom: 10px;
+        }
+    </style>
+    
+
+
+
+
+
+
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
