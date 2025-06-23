@@ -17,7 +17,7 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/guts1.png" alt="">
+                    <img src="img/ATIK Reda.jpg" alt="">
                 </div>
             </div>
             <div class="right-header">
@@ -381,10 +381,97 @@ Le respect des délais et du temps de présentation est important et fait partie
                 
                 
                 
-                
-               
+            <section class="container experience" id="experiences">
+                <div class="main-title">
+                  <h2>Mes <span>Expériences</span><span class="bg-text">PROJETS PRO</span></h2>
+                </div>
+              
+                <!-- Boutons en haut -->
+<!-- Boutons en haut -->
+<div class="experience-buttons new-style">
+    <a href="#cea" class="exp-tab"><i class="fas fa-microchip"></i> CEA 2024/2025</a>
+    <a href="#edumotiv" class="exp-tab"><i class="fas fa-laptop-code"></i> Edumotiv 2024</a>
+  </div>
+  
+                </div>
+                <div class="experience-content">
+                  <div class="exp-details" id="cea">
+                    <h3>Alternance - CEA Leti (2024/2025)</h3>
+                    <p>
+                      En tant que développeur au <strong>CEA LETI</strong> (Grenoble), j'ai intégré l’équipe LSGA pour renforcer une application Swing destinée à la gestion des FOUPs (conteneurs de tranches de silicium) en salle blanche. 
+                    </p>
+                    <ul>
+                      <li>Création, encodage et suivi de l’état des FOUPs (CLEAN, ASSOCIATED, etc.).</li>
+                      <li>Connexion à un bus sécurisé pour interagir avec des services via <strong>LetiGateway</strong>.</li>
+                      <li>Détection automatique d’un lot, passage automatique à l’état CLEAN après usage.</li>
+                      <li>Tests automatisés via <strong>SAM</strong>, déploiement via <strong>ASH</strong>.</li>
+                      <li>Production de diagrammes UML, documentation technique claire et tests JTester.</li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+              
+                  <div class="exp-details" id="edumotiv">
+                    <h3>Stage chez Edumotiv - 2024</h3>
+                    <p>
+                      Lors de mon stage chez <strong>Edumotiv</strong>, un centre de formation basé à Lyon, j’ai été chargé d’étendre le modèle de données de la solution de ticketing <strong>iTop</strong>, ainsi que de participer à la gestion du support informatique.
+                    </p>
+                    <ul>
+                      <li>Création d’extensions <strong>PHP/XML</strong> dans iTop : <strong>Furniture</strong>, <strong>Gear</strong>, <strong>PC</strong>.</li>
+                      <li>Ajout de la gestion d’attribution des équipements aux utilisateurs (contre les vols).</li>
+                      <li>Documentation complète via un <strong>Wiki</strong> pour futurs stagiaires.</li>
+                      <li>Support utilisateur : configuration de postes, gestion de parc, comptes et tickets.</li>
+                      <li>Migration d’un projet complet sur <strong>Azure DevOps</strong> (sécurisation & restructuration).</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              
 
 
+              <style>
+                .experience-buttons.new-style {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+
+.exp-tab {
+  background: #222;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.exp-tab:hover {
+  background: #333;
+  border-color: #888;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Scroll fluide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Marge pour que le scroll ne colle pas en haut */
+.exp-details {
+  scroll-margin-top: 80px;
+}
+
+              </style>
+              
 
 
 
@@ -468,7 +555,7 @@ function showModal() {
         }
         
         function hideModal() {
-            var modal = document.querySelector('.portfolio-item .modal-overlay');
+            var modal =) document.querySelector('.portfolio-item .modal-overlay');
             modal.classList.remove('show');
         }
     
@@ -575,9 +662,10 @@ function showModal() {
         .modal-text p {
             margin-bottom: 10px;
         }
+
     </style>
     
-
+    
 
 
 
@@ -588,6 +676,10 @@ function showModal() {
         <div class="control active-btn" data-id="home" >
             <i class="fas fa-home"></i>
         </div>
+        <div class="control" data-id="experiences">
+            <i class="fas fa-building"></i>
+        </div>
+        
         <div class="control" data-id="about">
             <i class="fas fa-user"></i>
         </div>
